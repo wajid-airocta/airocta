@@ -1,0 +1,565 @@
+{
+    "textures":{
+        "sRoomLightMap": "maps/short_sink2.jpg",
+        "sRoomAoMap": "maps/short_sink2_ao.jpg",
+        "lRoomLightMap": "maps/tall_sink1.jpg",
+        "lRoomAoMap": "maps/tall_sink1_ao.jpg",
+        "sCubicleLightMap": "maps/short_door.jpg",
+        "sCubicleAoMap": "maps/short_door_ao.jpg",
+        "lCubicleLightMap": "maps/tall_door.jpg",
+        "lCubicleAoMap": "maps/tall_door_ao.jpg",
+        "lSinkLightMap": "maps/sink2.jpg",
+        "lSinkAoMap": "maps/sink2_ao.jpg",
+        "sSinkLightMap": "maps/sink3.jpg",
+        "handsdryerMap": "maps/handsdryer.png",
+        "sSinkAoMap": "maps/sink3_ao.jpg"
+    },
+    "materials":{
+        "walls":{
+            "color" : "#cccccc",
+            "lightMap" : "sRoomLightMap",
+            "lightMapIntensity" : 1.5,
+            "aoMap" : "sRoomAoMap"
+        },
+        "floor":{
+            "color" : "#cccccc",
+            "lightMap" : "sRoomLightMap",
+            "lightMapIntensity" : 1.5,
+            "aoMap" : "sRoomAoMap",
+            "aoMapIntensity": 1.2
+        },
+        "ceiling":{
+            "color" : "#cccccc",
+            "lightMap" : "sRoomLightMap",
+            "lightMapIntensity" : 1.5,
+            "aoMap" : "sRoomAoMap"
+        },
+        "light_ring":{
+            "color" : "#cccccc",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 0.5,
+            "aoMapIntensity" : 0.5,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+        "light_led":{
+            "color" : "#fff",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 2,
+            "aoMapIntensity" : 0.5
+        },
+        "base_mesh":{
+            "color" : "#979797",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 1,
+            "aoMapIntensity" : 1,
+            "metalness": 0.5,
+            "roughness": 0.3,
+            "envMapIntensity": 0.2
+        },
+        "tap1":{
+            "color" : "#eee",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 1,
+            "aoMapIntensity" : 1,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+    "tap2":{
+            "color" : "#eee",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 1,
+            "aoMapIntensity" : 1,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+         "tap3":{
+            "color" : "#eee",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 1,
+            "aoMapIntensity" : 1,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+         "tap4":{
+            "color" : "#eee",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 1,
+            "aoMapIntensity" : 1,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+            "faucet1":{
+            "color" : "#eee",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 1,
+            "aoMapIntensity" : 1,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+            "faucet2":{
+            "color" : "#eee",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 1,
+            "aoMapIntensity" : 1,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+            "faucet3":{
+            "color" : "#eee",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 1,
+            "aoMapIntensity" : 1,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+            "faucet4":{
+            "color" : "#eee",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 1,
+            "aoMapIntensity" : 1,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+        "duct_panels":{
+            "color" : "#ccc",
+            "lightMap" : "sRoomLightMap",
+            "lightMapIntensity" : 2,
+            "aoMap" : "sRoomAoMap"
+        },
+        "duct_shadows":{
+            "color" : "#ccc",
+            "lightMap" : "sRoomLightMap",
+            "lightMapIntensity" : 2,
+            "aoMap" : "sRoomAoMap"
+        },
+         "toilets":{
+            "color" : "#999999",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "metalness": 0.3,
+            "roughness": 0.4,
+             "lightMapIntensity": 0.2,
+          "envMapIntensity": 0.53
+        },
+
+            "dryerlogo":{
+            "color" : "#fffff",
+            "metalness": 0.75,
+            "roughness": 0.2,
+          "envMapIntensity": 0.7
+        },
+         "dryerflowduct":{
+            "color" : "#999999",
+            "metalness": 0.75,
+            "roughness": 0.2,
+          "envMapIntensity": 0.9
+        },
+        "dryerbody":{
+            "color" : "#bfbfbf",
+            "metalness": 0.7,
+            "roughness": 0.4,
+          "envMapIntensity": 0.9
+        },
+        "toiletbtns":{
+               "color" : "#cccccc",
+           "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "metalness": 0.75,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.3,
+          "envMapIntensity": 0.43
+        },
+        "urinal_flush1":{
+            "color" : "#eeeeee",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "metalness": 0.5,
+            "roughness": 0.3,
+            "envMapIntensity": 0.5
+        },
+        "urinal_flush2":{
+            "color" : "#dddddd",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "metalness": 0.75,
+            "roughness": 0.3,
+            "envMapIntensity": 0.5
+        },
+        "urinal":{
+            "color" : "#ffffff",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "metalness": 0.35,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.9,
+          "envMapIntensity": 0.93
+        },
+        "door":{
+            "color" : "#ccc",
+            "lightMap" : "sCubicleLightMap",
+            "lightMapIntensity" : 1.6,
+            "aoMap" : "sCubicleAoMap"
+        },
+        "pedestal_base":{
+            "color" : "#eeeeee",
+            "lightMap" : "sCubicleLightMap",
+            "aoMap" : "sCubicleAoMap",
+            "lightMapIntensity" : 0.5,
+            "aoMapIntensity" : 0.5,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+        "pedestal_foot":{
+            "color" : "#2a2a2a",
+            "lightMap" : "sCubicleLightMap",
+            "aoMap" : "sCubicleAoMap",
+            "lightMapIntensity" : 0.5,
+            "aoMapIntensity" : 0.5,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+        "pilasters":{
+            "color" : "#ccc",
+            "lightMap" : "sCubicleLightMap",
+            "lightMapIntensity" : 1.6,
+            "aoMap" : "sCubicleAoMap"
+                
+        },
+        "bar":{
+            "color" : "#eeeeee",
+            "lightMap" : "sCubicleLightMap",
+            "aoMap" : "sCubicleAoMap",
+            "lightMapIntensity" : 0.5,
+            "aoMapIntensity" : 0.5,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 1
+        },
+        "divisions":{
+            "color" : "#ccc",
+            "lightMap" : "sCubicleLightMap",
+            "lightMapIntensity" : 2,
+            "aoMap" : "sCubicleAoMap"
+        },
+        "hinges":{
+            "color" : "#ffffff",
+            "lightMap" : "sCubicleLightMap",
+            "lightMapIntensity" : 1,
+            "aoMap" : "sCubicleAoMap",
+            "aoMapIntensity" : 1,
+            "metalness": 0.75,
+            "roughness": 0.3,
+            "envMapIntensity": 0.5
+        },
+        "lock_base":{
+            "color" : "#ffffff",
+            "lightMap" : "sCubicleLightMap",
+            "lightMapIntensity" : 1,
+            "aoMap" : "sCubicleAoMap",
+            "aoMapIntensity" : 1,
+            "metalness": 0.75,
+            "roughness": 0.3,
+            "envMapIntensity": 0.5
+        },
+        "lock_foot":{
+            "color" : "#2a2a2a",
+            "lightMap" : "sCubicleLightMap",
+            "lightMapIntensity" : 1,
+            "aoMap" : "sCubicleAoMap",
+            "aoMapIntensity" : 1,
+            "metalness": 0.3,
+            "roughness": 0.3,
+            "envMapIntensity": 0.5
+        },
+        "lock_green":{
+            "color" : "#0ce30c",
+            "envMapIntensity": 0.5
+        },
+        "lock_red":{
+            "color" : "#ff0000",
+            "envMapIntensity": 0.5
+        },
+        "vanity_top":{
+            "lightMap" : "lSinkLightMap",
+            "lightMapIntensity" : 2,
+            "aoMap" : "lSinkAoMap"
+        },
+        "van_top":{
+            "lightMap" : "lSinkLightMap",
+            "lightMapIntensity" : 2,
+            "aoMap" : "lSinkAoMap"
+        },
+        "vanity_panels":{
+            "lightMap" : "lSinkLightMap",
+            "lightMapIntensity" : 2,
+            "aoMap" : "lSinkAoMap",
+            "aoMapIntensity" : 1
+        },
+           "vanity_sink":{
+            "color" : "#999",
+            "lightMap" : "sSinkLightMap",
+            "aoMap" : "sSinkAoMap",
+            "metalness": 0.35,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.9,
+          "envMapIntensity": 0.63,
+          "aoMapIntensity" : 0.91
+        },
+         "vanity_sink_large":{
+            "color" : "#FFF",
+            "lightMap" : "lSinkLightMap",
+            "lightMapIntensity" : 1.5,
+            "aoMap" : "lSinkAoMap",
+            "aoMapIntensity" : 1
+        },
+        
+        
+        "sinkbowel":{
+           "color" : "#999",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "metalness": 0.45,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.9,
+          "envMapIntensity": 0.53
+        },
+
+              "vanity_sink2":{
+           "color" : "#999",
+            "lightMap" : "sSinkLightMap",
+            "aoMap" : "sSinkAoMap",
+            "metalness": 0.35,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.9,
+          "envMapIntensity": 0.63
+        },
+            "sinkbowel2":{
+           "color" : "#999",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "metalness": 0.45,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.9,
+          "envMapIntensity": 0.53
+        },
+                     "vanity_sink3":{
+           "color" : "#999",
+            "lightMap" : "sSinkLightMap",
+            "aoMap" : "sSinkAoMap",
+            "metalness": 0.35,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.9,
+          "envMapIntensity": 0.63
+        },
+            "sinkbowel3":{
+           "color" : "#999",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sSinkAoMap",
+            "metalness": 0.45,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.9,
+          "envMapIntensity": 0.53
+        },
+           "vanity_sink4":{
+           "color" : "#999",
+            "lightMap" : "sSinkLightMap",
+            "aoMap" : "sSinkAoMap",
+            "metalness": 0.35,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.9,
+          "envMapIntensity": 0.63
+        },
+            "sinkbowel4":{
+           "color" : "#999",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sSinkAoMap",
+            "metalness": 0.45,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.9,
+          "envMapIntensity": 0.53
+        },
+           "fsink":{
+            "color" : "#999",
+            "metalness": 0.35,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.9,
+          "envMapIntensity": 0.63,
+          "aoMapIntensity" : 0.91
+        },
+            "topsink":{
+            "color" : "#f2f2f2",
+            "metalness": 0.45,
+            "roughness": 0.2,
+             "lightMapIntensity": 0.5,
+          "envMapIntensity": 0.83,
+          "aoMapIntensity" : 0.91
+        },
+
+        "vanity_shadows":{
+            "lightMap" : "lSinkLightMap",
+            "lightMapIntensity" : 2,
+            "aoMap" : "lSinkAoMap",
+            "aoMapIntensity" : 1
+        },
+        "vanity_plinth":{
+            "color": "#3a3a3a",
+            "lightMap" : "lSinkLightMap",
+            "lightMapIntensity" : 3,
+            "aoMap" : "lSinkAoMap",
+            "aoMapIntensity" : 1
+        },
+        "soap_dispenser":{
+            "color" : "#eee",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 2,
+            "metalness": 1,
+            "roughness": 0.1,
+            "envMapIntensity": 0.7
+        },
+        "mirrors":{
+            "color" : "#ffffff",
+            "metalness": 1,
+            "roughness": 0,
+            "envMapIntensity": 1.0
+        },
+        "mirrors_frame":{
+            "color" : "#464646",
+            "lightMap" : "sRoomLightMap",
+            "aoMap" : "sRoomAoMap",
+            "lightMapIntensity" : 1,
+            "metalness": 0.7,
+            "roughness": 0.2,
+            "envMapIntensity": 1
+        }
+    },
+    "hiddenGroups": [
+        "cubicles_l",
+        "vanity_s",
+        "vanity_sm",
+        "vanity_i",
+        "vanity_t"
+    ],
+    "visibleVanity": "vanity_l",
+    "visibleCubicle": "cubicles_s",
+    "camera":{
+        "default":{
+            "position": {"x":0, "y":130, "z":880 },
+            "rotation": {"x":0, "y":0, "z":0 },
+            "near": 1,
+            "far": 10000,
+            "fov": 35
+        },
+        "vanity":{
+            "position": {"x":-155, "y":107, "z":279 },
+            "rotation": {"x":0, "y":297, "z":0 },
+            "near": 1,
+            "far": 10000,
+            "fov": 35
+        },
+        "urinal":{
+            "position": {"x":189, "y":118, "z":301 },
+            "rotation": {"x":0, "y":63, "z":0 },
+            "near": 1,
+            "far": 10000,
+            "fov": 35
+        }
+    },
+    "container":{
+        "width" : 300,
+        "height" : 300,
+        "aspectRatio" : 1
+    },
+    "selectableObjects":["pilasters","door","divisions","duct_shadows","vanity_shadows","vanity_panels","vanity_top","duct_panels","floor"],
+    "ignoreSelectableObjects":["walls", "toilets", "urinal","urinal_flush1","urinal_flush2","bar","vanity_plinth","van_top"],
+
+    "texturePacks":{
+        "plains": ["Beige Nature", "BLANC MEDGEVE", "Blanc Menuires", "Bleu Buée", "Bleu Caraïbes", "Bleu Flash", "Bleu Oslo", "Bleu Turquoise", "Cactus", "Capucine", "Chardon", "Coquille dŒuf", "Cyclamen", "Genêt", "Gris Cendré", "Gris Orage", "Gris Perle", "Gris Tourterelle", "Mousse", "Noir", "ORGEAT", "Pierre de Lune", "Pomme Verte", "Rose Indien", "Rouge Amarante", "Rouge Cerise", "Vert Bali", "Vert Impérial", "Vinyle", "Zeste de Citron"],
+        "woodgrains": ["Travertin Naturel", "Banian Blanchi", "Chêne Alba", "Chêne Clair Horizontal", "Chêne Colorado", "Chêne d’Argent", "Noisetier Naturel", "Noyer_Ombré"],
+        "textures": ["Erable Feroe Horizontal", "Nova Mousse", "Nova saphir"],
+        "flooring": ["Aqua", "basalt", "citrine", "cobalt", "diopside", "granite", "halite", "jade", "jasper", "moonstone", "obsidian", "opal", "pebble", "peridot", "Ruby", "Sandstone", "sapphire", "Topaz"],
+        "solid_surface": ["Erable Feroe Horizontal", "Nova Mousse", "Nova saphir"]
+    },
+    "textureGroups":{
+        "divisions" : ["plains", "woodgrains", "textures"],
+        "door" : ["plains", "woodgrains", "textures"],
+        "pilasters" : ["plains", "woodgrains", "textures"],
+        "duct_panels" : ["plains", "woodgrains", "textures"],
+        "duct_shadows" : ["plains", "woodgrains", "textures"],
+       "vanity_top" : ["plains", "woodgrains", "textures", "solid_surface"],
+        "vanity_panels" : ["plains", "woodgrains", "textures"],
+        "vanity_shadows" : ["plains", "woodgrains", "textures"],
+        "floor" : ["flooring"]
+    },
+    "summary" : {
+        "divisions" : {
+            "title" : "Divisions",
+            "product" : "Default",
+            "cat" : "Default"
+        },
+        "door" : {
+            "title" : "Doors",
+            "product" : "Default",
+            "cat" : "Default"
+        },
+        "pilasters" : {
+            "title" : "Pilasters",
+            "product" : "Default",
+            "cat" : "Default"
+        },
+        "duct_panels" : {
+            "title" : "Duct Panels",
+            "product" : "Default",
+            "cat" : "Default"
+        },
+        "duct_shadows" : {
+            "title" : "Duct Shadows",
+            "product" : "Default",
+            "cat" : "Default"
+        },
+        "vanity_top" : {
+            "title" : "Vanity Top",
+            "product" : "Default",
+            "cat" : "Default"
+        },
+        "vanity_panels" : {
+            "title" : "Vanity Panels",
+            "product" : "Default",
+            "cat" : "Default"
+        },
+        "vanity_shadows" : {
+            "title" : "Vanity Shadows",
+            "product" : "Default",
+            "cat" : "Default"
+        },
+        "floor" : {
+            "title" : "Floor",
+            "product" : "Default",
+            "cat" : "Default"
+        }
+    },
+    "model" : "version83.fbx"
+}
